@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="login__form">
+
+      <img src="../../assets/imgs/logo 3.png" style=" position: absolute; top: -7em; left: 4em;">
+  
+      <h4 class="login__header"> Log In To eHara Driver</h4>
+      <form #loginForm=ngForm (ngSubmit)="toDash()">
+              <ion-list>
+
+                      <ion-item style="border-color: transparent;">
+                        <ion-label floating style="color: white;">User Name</ion-label>
+                        <ion-input type="text" [(ngModel)]="form.username" name="username" required style="color: white;"></ion-input>
+                      </ion-item>
+                    
+                      <ion-item style="border-color: transparent;">
+                        <ion-label floating style="color: white;">Password</ion-label>
+                        <ion-input type="password" [(ngModel)]="form.password" name="password" required style="color: white;"></ion-input>
+                      </ion-item>
+
+                      <span class="errors">{{ error }}</span>
+                    </ion-list>
+
+          <button ion-button class="fit" style=" width: 93%; margin-left: 11px;" [disabled]="!loginForm.valid"> LOGIN </button> 
+      </form>
+
+
+    </div>
+
+</ion-content>

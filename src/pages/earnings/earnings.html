@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="hara">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+     Earnings
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toProfile()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <h2>Today</h2>
+      <button ion-button clear item-end>₦400</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h2>This Past Week</h2>
+      <button ion-button clear item-end>₦1400</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h2>This Past Month</h2>
+      <button ion-button clear item-end>₦2730</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h2>Total Earnings</h2>
+      <button ion-button clear item-end>₦52730</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

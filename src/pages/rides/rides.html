@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="hara">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+     Rides History
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toProfile()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <h2>New Avenue, Gwarimpa</h2>
+      <p>Pickup at Wuse 2, Abuja</p>
+      <button ion-button clear item-end>₦400</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h2>Obafemi Awolowo Road, Maitama</h2>
+      <p>Pickup at Sharp Corner</p>
+      <button ion-button clear item-end>₦1400</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h2>Discovery Mall, Wuse 2</h2>
+      <p>Cameron Street, Asokoro</p>
+      <button ion-button clear item-end>₦730</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

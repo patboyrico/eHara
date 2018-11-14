@@ -1,14 +1,16 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar  color="hara">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
+      <img src="../assets/imgs/haralogo.jpg">
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
+        <ion-icon name="{{p.icon}}" item-end></ion-icon>
       </button>
     </ion-list>
   </ion-content>

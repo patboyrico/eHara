@@ -1,0 +1,83 @@
+page-login {
+    ion-content {
+        background: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url('../../assets/imgs/back.jpeg');
+        background-size: cover;
+        height: 100vh;
+    }
+
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+      
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+
+
+    h1 {
+        text-transform: uppercase;
+        margin: 19rem 0 5rem 0;
+    }
+
+    .splash__screen {
+        text-align: center;
+        color: white;
+        font-family: 'Pattaya', sans-serif;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+    }
+
+    .login__form {
+        padding-top: 6em;
+    }
+
+    .login__header {
+        color: ghostwhite;
+        padding-bottom: 8px;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        padding-top: 2.7em;
+    }
+
+    .fit {
+        width: 93%;
+        margin-left: 11px;
+    }
+
+    .fit__facebook {
+        background-color: #4c66a4;
+    }
+
+    .fit__google {
+        background-color: #de4a38;
+    }
+
+    .item-input {
+        background-color: transparent;
+    }
+
+
+    .login__seperator {
+        color: whitesmoke;
+        text-align: center;
+        padding: 2em 0;
+    } 
+
+    .signup__text {
+       padding-left: 1em;
+        color: white;
+    }
+    
+    .errors {
+        color: red;
+        /* text-align: center; */
+        padding: 0px 1em;
+    }
+}

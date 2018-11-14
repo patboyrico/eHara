@@ -1,18 +1,31 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="hara">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>
+     eHara
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toProfile()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content >
+    <div #map id="map"></div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="hara">
+    <ion-item style="background-color: transparent;">
+        <ion-label color="light">{{ isOnline ? 'Go Offline' : 'Go Online' }}</ion-label>
+    <ion-toggle (ionChange)="updateDriverOnlineStatus($event)" [checked]="isOnline"></ion-toggle>
+    </ion-item>
+    
+  </ion-toolbar>
+</ion-footer>

@@ -1,3 +1,25 @@
 page-home {
+    #map {
+        height: 100%;
+    }
+
+    .item.item-block .item-inner {
+        border-bottom: 0.55px solid transparent;
+    }
+
+    .toolbar-title-md {
+        padding-left: 76px;
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        width : 100%;
+    }
+
+    .request-controls {
+        text-align: center;
+        background: linear-gradient(transparent, map-get($colors , light ));
+    }
 
 }
