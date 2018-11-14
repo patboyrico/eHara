@@ -51,10 +51,10 @@ export class LoginPage {
 
   handleResponse(data) {
 
-      this.storage.set('data', data.username);
+    
       this.db.getDriverInfo(data.username).subscribe(
               resp => {
-                  this.driverData = resp;
+                  console.log(resp);
               }
       );
       this.token.handle(data.access_token);
@@ -63,6 +63,12 @@ export class LoginPage {
       		driverId: this.driverId,
       		driverUserId: this.driverUserid
       });
+  }
+
+  getResponse(resp)
+  {
+    this.driverData = resp;
+    console.log(this.driverData);
   }
 
   toDash()

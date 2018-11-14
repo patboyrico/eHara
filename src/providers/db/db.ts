@@ -14,7 +14,7 @@ import { TokenProvider } from '../token/token';
 @Injectable()
 export class DbProvider {
 
-  public base_url =  'http://192.168.43.130:8080/';
+  public base_url =  'http://172.104.216.175:8080/';
   public access_token
 
   constructor(public http: HttpClient, private token: TokenProvider,

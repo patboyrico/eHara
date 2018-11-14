@@ -5,7 +5,7 @@ import { Storage } from '@ionic/storage';
 import { AngularFireDatabase } from 'angularfire2/database';
 
 import { TokenProvider } from '../token/token';
-import { LoginPage } from '../../pages/login/login';
+//import { LoginPage } from '../../pages/login/login';
 
 // import { AngularFireDatabase } from 'angularfire2/database';
 
@@ -21,7 +21,7 @@ import { LoginPage } from '../../pages/login/login';
 export class DriverProvider {
 
 
-  public base_url =  'http://192.168.43.130:8080/';
+  public base_url =  'http://172.104.216.175:8080/';;
   public driver;
 
   public pickupRequest: boolean = false;

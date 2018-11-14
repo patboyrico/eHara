@@ -44,11 +44,13 @@ export class HomePage {
               public navParams: NavParams, public modalCtrl: ModalController, public db: DbProvider,
               public storage: Storage
               ) {
-                  this.storage.get('driverData').then(
-                    driverData => {
-                      console.log(driverData);
-                    }
-                  )                 
+                  // this.storage.get('driverData').then(
+                  //   driverData => {
+                  //     console.log(driverData);
+                  //   }
+                  // )     
+                  
+                  
               }
 
     getRider()
@@ -57,7 +59,6 @@ export class HomePage {
     }
 
   ionViewDidLoad() {  
-
     
     this.platform.ready().then(() => {
             

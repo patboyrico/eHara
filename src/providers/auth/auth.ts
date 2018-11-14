@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AuthProvider {
 
-  public base_url =  'http://192.168.43.130:8080/';
+  public base_url =  'http://172.104.216.175:8080/';
 
   constructor(public http: HttpClient) {
     //console.log('Hello AuthProvider Provider');
