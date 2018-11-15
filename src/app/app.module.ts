@@ -14,6 +14,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 //import { FIREBASE_CONFIG } from '../app/firebase.credentials.';
 
 import { Geolocation } from '@ionic-native/geolocation';
+import { Firebase } from '@ionic-native/firebase';
+import { UniqueDeviceID } from '@ionic-native/unique-device-id';
+import { Device } from '@ionic-native/device';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,6 +28,7 @@ import { EarningsPage } from '../pages/earnings/earnings';
 import { RidesPage  } from '../pages/rides/rides';
 import { TokenProvider } from '../providers/token/token';
 import { AuthProvider } from '../providers/auth/auth';
+import { FcmProvider } from '../providers/fcm/fcm';
 
 export const FIREBASE_CONFIG = {
   apiKey: "AIzaSyDE3AjW_QVWmPkxyZjWIk8sVcIJR915xuE",
@@ -69,7 +74,11 @@ export const FIREBASE_CONFIG = {
     DbProvider,
     TokenProvider,
     AuthProvider,
-    Geolocation
+    Geolocation,
+    Firebase,
+    UniqueDeviceID,
+    FcmProvider,
+    Device
   ]
 })
 export class AppModule {}

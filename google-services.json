@@ -1,0 +1,262 @@
+{
+  "project_info": {
+    "project_number": "853570012334",
+    "firebase_url": "https://ehara-8569c.firebaseio.com",
+    "project_id": "ehara-8569c",
+    "storage_bucket": "ehara-8569c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853570012334:android:847b16dda9d3d791",
+        "android_client_info": {
+          "package_name": "com.example.styl3r.realtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853570012334-m2fnpir01pnpg1u7joa9b6vr9q34kufm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.styl3r.realtimedatabase",
+            "certificate_hash": "d9fea903d549e26126b21c228ed3657e5cd45d6a"
+          }
+        },
+        {
+          "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIzgVxnjJvplr9BMSTW6tme6UNRQ6SJ2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853570012334:android:4681dae294ca7606",
+        "android_client_info": {
+          "package_name": "com.lyshnia.ehara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853570012334-amu3c0fjeh6bhk5dt3joutj7qt0c6a9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lyshnia.ehara",
+            "certificate_hash": "84b6478985731ce92455d2b010dffb6942e9459c"
+          }
+        },
+        {
+          "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIzgVxnjJvplr9BMSTW6tme6UNRQ6SJ2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853570012334:android:251d0ae608028258",
+        "android_client_info": {
+          "package_name": "com.nandom.eharadriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853570012334-7cjgiso2q2s73eha7p6d9rqo1qirvg65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandom.eharadriver",
+            "certificate_hash": "84b6478985731ce92455d2b010dffb6942e9459c"
+          }
+        },
+        {
+          "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIzgVxnjJvplr9BMSTW6tme6UNRQ6SJ2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853570012334:android:e3ce5711ad02be30",
+        "android_client_info": {
+          "package_name": "com.nandom.myuber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853570012334-f5m0mon1h4jfggv5kpo6796cag2khllo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandom.myuber",
+            "certificate_hash": "84b6478985731ce92455d2b010dffb6942e9459c"
+          }
+        },
+        {
+          "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIzgVxnjJvplr9BMSTW6tme6UNRQ6SJ2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853570012334:android:bf59483244acdc6f",
+        "android_client_info": {
+          "package_name": "com.nandom.ubercloned"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853570012334-2llko22lt22u7sdn3kk72ieej0gdgfnt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandom.ubercloned",
+            "certificate_hash": "84b6478985731ce92455d2b010dffb6942e9459c"
+          }
+        },
+        {
+          "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIzgVxnjJvplr9BMSTW6tme6UNRQ6SJ2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853570012334:android:7988e3c721a16ab6",
+        "android_client_info": {
+          "package_name": "io.ehara.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853570012334-s8nj0r5lr77hmi9s1aoboht7hn89o4pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIzgVxnjJvplr9BMSTW6tme6UNRQ6SJ2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -50,25 +50,15 @@ export class LoginPage {
 }
 
   handleResponse(data) {
-
-    
-      this.db.getDriverInfo(data.username).subscribe(
-              resp => {
-                  console.log(resp);
-              }
-      );
       this.token.handle(data.access_token);
       this.navCtrl.setRoot(HomePage, {
-      		driverData: this.driverData,
-      		driverId: this.driverId,
-      		driverUserId: this.driverUserid
+      		driverData: data.username
       });
   }
 
   getResponse(resp)
   {
     this.driverData = resp;
-    console.log(this.driverData);
   }
 
   toDash()

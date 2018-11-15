@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>853570012334-fqbeut9lgpi86jq4t6otmvbcj6e4ub58.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.853570012334-fqbeut9lgpi86jq4t6otmvbcj6e4ub58</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBgIjFj5W09zaM7ODVf_t9UduBbrxyIsQk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>853570012334</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.ehara.driver</string>
+	<key>PROJECT_ID</key>
+	<string>ehara-8569c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ehara-8569c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:853570012334:ios:7988e3c721a16ab6</string>
+	<key>DATABASE_URL</key>
+	<string>https://ehara-8569c.firebaseio.com</string>
+</dict>
+</plist>

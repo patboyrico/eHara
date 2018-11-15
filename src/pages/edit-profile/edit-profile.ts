@@ -19,12 +19,12 @@ export class EditProfilePage {
   public driverProfile;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public token: TokenProvider) {
-      this.driverProfile = this.navParams.get('driver');
-      console.log(this.driverProfile);
+      
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EditProfilePage');
+    this.driverProfile = this.navParams.get('driver');
+    console.log(this.driverProfile);
   }
 
   logout()

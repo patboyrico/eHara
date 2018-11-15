@@ -5,16 +5,8 @@ import { Storage } from '@ionic/storage';
 import { AngularFireDatabase } from 'angularfire2/database';
 
 import { TokenProvider } from '../token/token';
-//import { LoginPage } from '../../pages/login/login';
 
-// import { AngularFireDatabase } from 'angularfire2/database';
 
-// import * as GeoFire from "geofire";
-
-// import * as Firebase f//rom "firebase";
-
-//import { Observable } from 'rxjs';
-//import { map } from 'rxjs/operators';
 
 
 @Injectable()
@@ -23,6 +15,7 @@ export class DriverProvider {
 
   public base_url =  'http://172.104.216.175:8080/';;
   public driver;
+  public device;
 
   public pickupRequest: boolean = false;
   //public driverId: string = '2ULXHsUunHoX6HEdSdaX';
@@ -55,11 +48,28 @@ export class DriverProvider {
     
       }
 
+      setDeviceId(id, deviceId)
+      {
+          this.device = {
+               "action": "update_id",
+               "fid": deviceId.toString()
+          }
+
+          let header: HttpHeaders = new HttpHeaders()
+          header = header.append('Authorization', 'Bearer ' + this.access_token);
+
+          this.http.put(this.base_url + 'firebase/' + id,  this.device, {
+            headers: header
+        }).subscribe(result => {});
+
+      }
+
+
       setDriverLocation(online, latitude, longitude, id)
       {
            this.driver = {
-              activity: online,
-              value: true,
+              activity: 'online',
+              value: online,
               long: longitude.toString(),
               lat: latitude.toString()
           }
@@ -74,13 +84,13 @@ export class DriverProvider {
 
       }
 
-      updateDriverLocation(latitude, longitude)
-      {
-          this.afs.list('driversAvailable/' + this.username).set('l', {
-              0: latitude,
-              1: longitude
-          }, )
-      }
+      // updateDriverLocation(latitude, longitude, username)
+      // {
+      //   this.afs.list('driversAvailableRegular/' + username + '/l').set({
+      //     0: latitude, 
+      //     1: longitude
+      //   }, null);   
+      // }
 
 
 }
