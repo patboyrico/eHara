@@ -15,7 +15,7 @@ export class FcmProvider {
 
   constructor(public http: HttpClient,  public firebaseNative: Firebase,
     public db: AngularFireDatabase,
-    private platform: Platform) {
+    public platform: Platform) {
   }
 
 

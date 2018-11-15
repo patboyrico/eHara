@@ -84,6 +84,25 @@ export class DriverProvider {
 
       }
 
+      updateDriverLocation(online, latitude, longitude, id)
+      {
+           this.driver = {
+              activity: 'location',
+              value: online,
+              long: longitude.toString(),
+              lat: latitude.toString()
+          }
+
+          let header: HttpHeaders = new HttpHeaders()
+          header = header.append('Content-Type', 'text/plain');
+          header = header.append('Authorization', 'Bearer ' + this.access_token);
+
+          this.http.put(this.base_url + 'driver/' + id,  this.driver, {
+            headers: header
+        }).subscribe(result => {});
+
+      }
+
       // updateDriverLocation(latitude, longitude, username)
       // {
       //   this.afs.list('driversAvailableRegular/' + username + '/l').set({

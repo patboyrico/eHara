@@ -4,7 +4,7 @@ import { NavController, Platform, LoadingController, AlertController, NavParams,
 import { Geolocation } from '@ionic-native/geolocation';
 import { DriverProvider } from '../../providers/driver/driver';
 import { Storage } from '@ionic/storage';
-import { Device } from '@ionic-native/device';
+import { UniqueDeviceID } from '@ionic-native/unique-device-id';
 
 
 import { filter } from 'rxjs/operators';
@@ -46,7 +46,7 @@ export class HomePage {
               public geo: Geolocation, public loadingCtrl: LoadingController,
               public driverProvider: DriverProvider, public alertCtrl: AlertController,
               public navParams: NavParams, public modalCtrl: ModalController, public db: DbProvider,
-              public storage: Storage, public device: Device
+              public storage: Storage, public device: UniqueDeviceID
               ) {
                   // this.storage.get('driverData').then(
                   //   driverData => {
@@ -74,10 +74,11 @@ export class HomePage {
     
     this.platform.ready().then(() => {
 
-      this.deviceId = this.device.uuid;
-      console.log(this.device.uuid);
+      this.device.get()
+      .then((uuid: any) => console.log(uuid))
+      .catch((error: any) => console.log(error));
 
-      this.driverProvider.setDeviceId(this.driverDetails.id, this.deviceId);
+      //this.driverProvider.setDeviceId(this.driverDetails.id, this.deviceId);
             
       let loading = this.loadingCtrl.create({
         content:'Locating...'
@@ -87,7 +88,7 @@ export class HomePage {
 
       let mapOptions = {
         zoom: 18,
-        //mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeControl: false, 
         streetViewControl: false,
         fullscreenControl: false,
@@ -125,11 +126,15 @@ export class HomePage {
                               this.addMapEventListeners();
                               this.lat = position.coords.latitude;
                               this.long = position.coords.longitude;
-                              this.updateDriverOnlineStatus( );
+                              this.updateDriverLocation(position.coords.latitude, position.coords.longitude );
                               console.log(this.long + ' ' + this.lat);
     });
 
   }
+
+
+  
+
 
   addMapEventListeners(){
     google.maps.event.addListener(this.map, 'dragstart', () => {
@@ -140,15 +145,15 @@ export class HomePage {
     })
   }
 
-  // updateDriverLocation(latitude, longitude)
-  // {
-  //   //this.driverProvider.updateDriverLocation(latitude, longitude, this.username);
-  // }
+  updateDriverLocation(latitude, longitude)
+  {
+    this.driverProvider.setDriverLocation(this.isOnline, latitude, longitude, 1);
+  }
 
   updateDriverOnlineStatus()
   {
       this.isOnline = !this.isOnline;
-      this.driverProvider.setDriverLocation(this.isOnline, this.lat, this.long, this.driverDetails.id);
+      this.driverProvider.setDriverLocation(this.isOnline, this.lat, this.long, 1);
   }
 
   toProfile()

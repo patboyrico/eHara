@@ -78,7 +78,9 @@ export const FIREBASE_CONFIG = {
     Firebase,
     UniqueDeviceID,
     FcmProvider,
-    Device
+    Device,
+    DriverProvider,
+    DriverProvider
   ]
 })
 export class AppModule {}
